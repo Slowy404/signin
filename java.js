@@ -82,4 +82,3 @@ lockpassword.onclick = function () {
     lockpassword.classList.toggle('none');
     document.querySelector('input[name="password"]').type = 'password';
 }
-
