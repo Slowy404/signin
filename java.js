@@ -56,7 +56,6 @@ btnsign.onclick = function (){
 }
 var valuesign = [];
 btnsign.onclick = function (){
-    
     if (!(enterpassword.value == '')) {
         if(!(enteremail.value == '')){
             valuesign[0] = [{
@@ -65,5 +64,19 @@ btnsign.onclick = function (){
             }]
         }
     }
-    return valuesign ; //// chổ dể đưa giá trị lên sever
+    console.log(valuesign);
+}
+var deletelogin = document.querySelector('.form-email .form-img');
+deletelogin.onclick = function (){
+    enteremail.value = '';
+}
+var openpassword = document.querySelector('.eye-close');
+openpassword.onclick = function () {
+    openpassword.classList.add('none');
+    document.querySelector('input[name="password"]').type = 'text';
+}
+var lockpassword = document.querySelector('.eye');
+lockpassword.onclick = function () {
+    openpassword.classList.remove('none');
+    document.querySelector('input[name="password"]').type = 'password';
 }
