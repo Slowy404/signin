@@ -27,6 +27,15 @@ body{
     z-index: 2;
     width: 100%;
 }
+.display{
+    font-size: 20px;
+    width: 98.88px;
+    height: 46.64px;
+    padding: 17px 23px;
+    line-height: 20px;
+    display: none !important;
+}
+
 .language{
     position: relative;
 }
@@ -324,7 +333,14 @@ input[type="password"]{
     border-radius: 10px;
     border-style: none;
 }
-
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 
 
 
@@ -613,4 +629,26 @@ input[type="password"]{
         object-fit: cover;
         width: 50px;
     }
+    i.display{
+        display : block !important;
+        z-index: 10;
+        padding-left: 27px;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        z-index: 9;
+        width: 50%;
+        height: 100%;
+        padding-top: 46.64px;
+        transition: width 3s;
+        display: none;
+    }
+    .home{
+        padding: 13px 27px;
+    }
+}
+.displaynone {
+    display: block !important ;
 }
