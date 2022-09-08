@@ -88,6 +88,7 @@ img.icon{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
     display:none;
     transition: all linear 3s;
+    z-index: 9;
 }
 .language:hover .item-sigin__list{
     display: block;
@@ -234,10 +235,30 @@ input[type="password"]{
     line-height: 24px;
     color: #667085;
 }
-.form-img{
+.mail{
+    position: relative;
+}
+.pass{
+    position: relative;
+}
+.email-close{
     position: absolute;
+    right: 20px;
     top: 50%;
-    left: 89%;
+}
+.eye-close{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    z-index: 2;
+    cursor: pointer;
+}
+.eye{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    z-index: 1;
+    cursor: pointer;
 }
 .form{
     position: relative;
@@ -314,7 +335,6 @@ input[type="password"]{
     align-content: center;
     margin-bottom : 30px;
 }
-
 .socical{
     width: 117px;
     height: 60px;
@@ -340,6 +360,15 @@ input[type="password"]{
     to{
         opacity: 1;
     }
+}
+.none{
+    display: none ;
+}
+.pass input[type="text"] {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 24px;
+    color: #667085;
 }
 
 
@@ -629,6 +658,7 @@ input[type="password"]{
         object-fit: cover;
         width: 50px;
     }
+    
     i.display{
         display : block !important;
         z-index: 10;
