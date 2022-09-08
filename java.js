@@ -72,11 +72,14 @@ deletelogin.onclick = function (){
 }
 var openpassword = document.querySelector('.eye-close');
 openpassword.onclick = function () {
-    openpassword.classList.add('none');
+    openpassword.classList.toggle('none');
+    lockpassword.classList.toggle('none');
     document.querySelector('input[name="password"]').type = 'text';
 }
 var lockpassword = document.querySelector('.eye');
 lockpassword.onclick = function () {
-    openpassword.classList.remove('none');
+    openpassword.classList.toggle('none');
+    lockpassword.classList.toggle('none');
     document.querySelector('input[name="password"]').type = 'password';
 }
+
